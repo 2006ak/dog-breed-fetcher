@@ -86,7 +86,7 @@ Note: The example in the documentation doesn't show it, but if you specify a bre
 
 ### Task 3:
 
-- [ ] Complete the `Main` class.
+- [X] Complete the `Main` class.
 
 ### Task 4:
 
@@ -113,7 +113,7 @@ Note: The example in the documentation doesn't show it, but if you specify a bre
 
 This API can also return URLs to pictures of dogs of a specified breed.
 
-- [ ] Read the [documentation for this part of the API](https://dog.ceo/dog-api/documentation/breed)
+- [X] Read the [documentation for this part of the API](https://dog.ceo/dog-api/documentation/breed)
     and write code to get one of these image URLs and display the image in a simple GUI.
 
 The result might look something like this:
