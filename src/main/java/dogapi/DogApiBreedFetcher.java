@@ -24,7 +24,6 @@ public class DogApiBreedFetcher implements BreedFetcher {
     @Override
     public List<String> getSubBreeds(String breed) throws BreedNotFoundException {
         OkHttpClient client = (new OkHttpClient()).newBuilder().build();
-
         Request request = (new Request.Builder())
                 .url(String.format("%s/breed/%s/list", API_URL, breed.toLowerCase()))
                 .build();
@@ -43,10 +42,10 @@ public class DogApiBreedFetcher implements BreedFetcher {
                 return subBreeds;
             }
             else {
-                throw new BreedNotFoundException(json.getString(MESSAGE));
+                throw new BreedNotFoundException(breed);
             }
         } catch (JSONException | IOException e) {
-            throw new BreedNotFoundException(e.getMessage());
+            throw new BreedNotFoundException(breed);
         }
     }
 }
